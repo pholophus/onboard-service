@@ -1,0 +1,10 @@
+{
+    "worldMap": {
+        "type": "oasis_building_game_test",
+        "zoneId": "a8ff9ef983585c65390da81f9ed43bfad0971558bc05801cc4cc06641bf946fc"
+    },
+    "arcade": {
+        "type": "arcade-game",
+        "zoneId": ""
+    }
+}

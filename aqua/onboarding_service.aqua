@@ -1,0 +1,47 @@
+import "@fluencelabs/aqua-lib/builtin.aqua" 
+
+data OnboardInput:
+    banner: string
+    wallet: string
+    arcade: string
+    screenshot: []string
+    gameName: string
+    description: string
+    developer: string
+    youtube: string
+    facebook: string
+    instagram: string
+    twitter: string
+    linkedin: string
+    genre: []string
+    gameURL: string
+    arcadeSize: string
+
+data StatusMessage:
+    status_code: f32
+    success: bool
+    message: string 
+
+data ArcadeDetail:
+    inputData: OnboardInput
+    x: f32
+    y: f32
+    location_id: string
+    status: StatusMessage
+    width: f32
+    height: f32
+
+data LocationDetail:
+    buildingId: string
+    locationId: string
+    status: StatusMessage
+    wallet: string
+
+
+service IOnboardingService("onboardingservice"):
+    -- list_of_games(walletAddress: string) -> []ArcadeDetail
+    get_location_game(onboardInput: OnboardInput) -> ArcadeDetail
+    insert_arcade_building(arcade_detail: ArcadeDetail) -> LocationDetail
+    update_mongodb_location(locationDetail: LocationDetail) -> StatusMessage
+
+    

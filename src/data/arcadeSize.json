@@ -1,0 +1,32 @@
+{
+    "1":{
+        "screen" : {
+            "width": "34",
+            "height": "19"
+        },
+        "machine" : {
+            "width": "64",
+            "height": "128 "
+        }
+    },
+    "2":{
+        "screen" : {
+            "width": "36",
+            "height": "16"
+        },
+        "machine" : {
+            "width": "64",
+            "height": "128 "
+        }
+    },
+    "3":{
+        "screen" : {
+            "width": "52",
+            "height": "23"
+        },
+        "machine" : {
+            "width": "96",
+            "height": "128"
+        }
+    }
+}
